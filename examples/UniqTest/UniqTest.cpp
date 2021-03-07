@@ -1,14 +1,13 @@
 #include "UniqTest.h"
 
-
+using namespace Upp;
 
 UniqTest::UniqTest()
 {
 	CtrlLayout(*this, "Window title");
 }
 
-// handles news app instances
-void UniqTest::handleInstance(Vector<String> const &v)
+void UniqTest::handleInstance(const Vector<String>& v)
 {
 	String s = edit.Get() + "NEW INSTANCE LAUNCHED\n  Command line : '";
 	for(int i = 0; i < v.GetCount(); i++)

@@ -2,25 +2,18 @@
 #define _UniqTest_UniqTest_h
 
 #include <CtrlLib/CtrlLib.h>
-
 #include <Uniq/Uniq.h>
 
-using namespace Upp;
-
-#define LAYOUTFILE <UniqTest/UniqTest.lay>
+#define LAYOUTFILE <examples/UniqTest/UniqTest.lay>
 #include <CtrlCore/lay.h>
 
-class UniqTest : public WithUniqTestLayout<TopWindow>
+class UniqTest : public WithUniqTestLayout<Upp::TopWindow>
 {
-	private:
-	public:
-		typedef UniqTest CLASSNAME;
-		UniqTest();
+public:
+	UniqTest();
 
-		// handles news app instances
-		void handleInstance(Vector<String> const &v);
-		
+	// handles news app instances
+	void handleInstance(const Upp::Vector<Upp::String>& v);
 };
 
 #endif
-
