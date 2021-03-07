@@ -46,9 +46,6 @@ class Uniq
 
 #endif
 
-	
-	protected:
-	
 	public:
 	
 	typedef Uniq CLASSNAME;

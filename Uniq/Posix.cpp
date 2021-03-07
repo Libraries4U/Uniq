@@ -1,6 +1,6 @@
 #include "Uniq.h"
 
-NAMESPACE_UPP
+namespace Upp {
 
 #ifdef PLATFORM_POSIX
 
@@ -188,4 +188,4 @@ Uniq::~Uniq()
 
 #endif
 
-END_UPP_NAMESPACE
+}

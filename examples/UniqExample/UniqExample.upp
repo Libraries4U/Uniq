@@ -5,9 +5,8 @@ uses
 	Uniq;
 
 file
-	UniqTest.lay,
-	UniqTest.h,
-	UniqTest.cpp;
+	main.cpp,
+	Layouts.lay;
 
 mainconfig
 	"" = "GUI MT",
